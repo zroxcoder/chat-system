@@ -6,7 +6,8 @@ document.getElementById("joinBtn").onclick = () => {
 
     if (!username) return alert("Enter a username");
 
-    socket = new WebSocket("wss://your-render-url");
+  socket = new WebSocket("wss://chat-system-lwde.onrender.com");
+
 
     socket.onopen = () => {
         socket.send(JSON.stringify({
